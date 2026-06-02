@@ -1,4 +1,4 @@
-# POAnoise: Partial Order Alignment-Based Amplicon Denoising
+# POAnoise: A Graph-based Denoising Pipeline for Amplicon Sequencing Data
 
 POAnoise is a graph-based denoising framework for amplicon sequencing data that combines Partial Order Alignment (POA), abundance-aware clustering, and heaviest-bundle consensus extraction to reconstruct biological sequences from noisy sequencing reads.
 
