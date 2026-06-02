@@ -37,7 +37,7 @@ These empirical Phred quality scores are used to simulate realistic sequencing e
 # Synthetic Data Generation
 
 Script:
-`generate_noisy_sequences.py`
+`noise_generation.py`
 
 This script generates noisy sequencing reads from clean reference sequences.
 
@@ -83,7 +83,7 @@ Contains counts of unique noisy sequences.
 # Preprocessing
 
 Script:
-`preprocess_reads.py`
+`preprocessing.py`
 
 Preprocessing is performed using USEARCH.
 
@@ -116,7 +116,7 @@ usearch -fastx_uniques -sizeout
 # POAnoise Algorithm
 
 Script:
-`poanoise.py`
+`POAnoise.py`
 
 ## Overview
 
@@ -172,7 +172,7 @@ Each FASTA header contains:
 # Sequence Similarity Evaluation
 
 Script:
-`similarity_report.py`
+`sequence_similarity.py`
 
 This script compares POAnoise consensus sequences to clean reference sequences.
 
@@ -225,16 +225,16 @@ External dependency:
 # Reproduction Pipeline
 
 1. Generate noisy reads:
-python generate_noisy_sequences.py
+python noise_generation.py
 
 2. Preprocess reads:
-python preprocess_reads.py
+python preprocessing.py
 
 3. Run POAnoise:
-python poanoise.py
+python POAnoise.py
 
 4. Compute similarity:
-python similarity_report.py
+python sequence_similarity.py
 
 ---
 
@@ -242,4 +242,4 @@ python similarity_report.py
 
 If you use this repository, please cite:
 
-POAnoise: Partial Order Alignment-Based Framework for Amplicon Denoising (manuscript in preparation)
+POAnoise: A Graph-based Denoising Pipeline for Amplicon Sequencing Data (manuscript in preparation)
